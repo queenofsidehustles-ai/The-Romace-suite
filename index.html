@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Romance Suite | Luxury Romantic Setups in Orlando</title>
+  <meta name="description" content="The Romance Suite creates luxury proposal setups, romantic hotel room decor, anniversary suites, honeymoon styling, birthday setups, and intentional couple experiences in Orlando, Tampa, Miami, Cocoa Beach, Melbourne, and Central Florida." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --red:#b91522; --deep:#52060b; --cream:#fff8f2; --champagne:#f8eadb;
+      --gold:#c8a45d; --ink:#240306; --muted:#6b2830; --border:rgba(185,21,34,.14);
+      --shadow:0 24px 70px rgba(70,9,14,.14); --soft:0 12px 34px rgba(70,9,14,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+    img{max-width:100%;display:block} a{text-decoration:none;color:inherit}
+    .container{max-width:1160px;margin:0 auto;padding:0 24px}
+    .section{padding:82px 0;position:relative}
+    .cream{background:linear-gradient(180deg,#fff8f2,#fff)}
+    h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--red);letter-spacing:-.04em;line-height:.92;margin:0;font-weight:700}
+    h1{font-size:clamp(48px,7vw,94px)} h2{font-size:clamp(36px,5vw,64px)} h3{font-size:clamp(25px,3vw,34px)}
+    p{color:var(--muted);line-height:1.65;font-size:15px}
+    .eyebrow{font-size:11px;letter-spacing:.26em;text-transform:uppercase;font-weight:800;color:var(--red);margin:0 0 12px}
+    .topbar{height:7px;background:linear-gradient(90deg,var(--deep),var(--red),var(--gold),var(--red))}
+    .nav-wrap{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(200,164,93,.22)}
+    nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .logo{width:150px;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(70,9,14,.07))}
+    .links{display:flex;align-items:center;gap:24px;font-size:13px;font-weight:700;color:var(--muted)}
+    .links a:hover{color:var(--red)}
+    .menu-btn{display:none;background:white;border:1px solid var(--border);border-radius:999px;padding:10px 14px;color:var(--red);font-weight:800}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 22px;font-weight:800;border:1px solid var(--red);transition:.22s ease;font-size:14px}
+    .btn-red{background:linear-gradient(135deg,var(--red),var(--deep));color:#fff;box-shadow:0 12px 28px rgba(185,21,34,.20)}
+    .btn-red:hover,.btn-outline:hover{transform:translateY(-2px)}
+    .btn-outline{background:rgba(255,255,255,.78);color:var(--red);box-shadow:0 10px 24px rgba(70,9,14,.05)}
+    .hero{position:relative;min-height:calc(100vh - 89px);overflow:hidden;background:
+      radial-gradient(circle at 16% 20%,rgba(200,164,93,.18),transparent 28%),
+      linear-gradient(135deg,#fff 0%,#fff8f2 52%,#fff 100%)}
+    .hero:before{content:"";position:absolute;inset:26px;border:1px solid rgba(200,164,93,.32);border-radius:34px;pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:54px;align-items:center;padding:70px 0 80px;position:relative;z-index:2}
+    .pill{display:inline-flex;border:1px solid rgba(185,21,34,.20);background:rgba(255,255,255,.72);backdrop-filter:blur(12px);border-radius:999px;color:var(--red);padding:9px 14px;font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:800;line-height:1.5;margin-bottom:22px;box-shadow:var(--soft)}
+    .lead{font-size:17px;max-width:560px;margin-top:22px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:26px}
+    .hero-art{position:relative;min-height:560px}
+    .frame{position:absolute;border-radius:28px;overflow:hidden;background:var(--cream);border:1px solid rgba(200,164,93,.34);box-shadow:var(--shadow)}
+    .frame img{width:100%;height:100%;object-fit:cover;transition:.6s}
+    .frame:hover img{transform:scale(1.035)}
+    .main-frame{right:0;top:0;width:75%;height:500px}
+    .small-frame{left:0;bottom:40px;width:42%;height:250px;border:8px solid rgba(255,255,255,.82)}
+    .float-note{position:absolute;right:20px;bottom:18px;width:260px;background:rgba(255,255,255,.80);backdrop-filter:blur(16px);border:1px solid rgba(200,164,93,.34);border-radius:24px;padding:20px;box-shadow:var(--soft)}
+    .float-note p{margin-bottom:0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:34px}
+    .section-head div{max-width:690px}
+    .section-head p:last-child{max-width:430px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:rgba(255,255,255,.86);border:1px solid var(--border);border-radius:24px;padding:22px;box-shadow:var(--soft);transition:.22s ease}
+    .card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .icon{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#fff,var(--champagne));color:var(--red);border:1px solid rgba(200,164,93,.35);margin-bottom:14px;font-size:13px}
+    .gallery-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-auto-rows:285px;gap:18px}
+    .gallery-item{position:relative;border-radius:26px;overflow:hidden;background:var(--cream);border:1px solid rgba(200,164,93,.32);box-shadow:var(--soft)}
+    .gallery-item:first-child{grid-row:span 2}
+    .gallery-item img{width:100%;height:100%;object-fit:cover}
+    .caption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(255,255,255,.78);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.5);border-radius:18px;padding:14px}
+    .caption h3{font-size:25px}.caption p{margin:6px 0 0;font-size:13px;line-height:1.45}
+    .packages{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .package{background:#fff;border:1px solid rgba(200,164,93,.34);border-radius:26px;padding:24px;box-shadow:var(--soft)}
+    .package.featured{border-color:rgba(185,21,34,.32);box-shadow:var(--shadow)}
+    .tag{display:inline-block;border-radius:999px;padding:7px 11px;background:var(--deep);color:#fff;font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:800;margin-bottom:14px}
+    .price{font-weight:800;color:var(--ink);margin:12px 0}
+    .addons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .addon{background:#fff;border:1px solid rgba(200,164,93,.28);border-radius:22px;padding:18px;box-shadow:0 8px 24px rgba(70,9,14,.06)}
+    .addon h3{font-size:25px}.addon p{margin:8px 0 0;font-size:13px}
+    .book{background:linear-gradient(135deg,var(--deep),#760d16 60%,var(--red));color:#fff}
+    .book h2,.book p,.book .eyebrow{color:#fff}
+    .book-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:44px;align-items:start}
+    .form{background:rgba(255,255,255,.94);color:var(--ink);border-radius:28px;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.55)}
+    .form p,.form span,.form label{color:var(--muted)}
+    .form strong{color:var(--ink)}
+    .form .eyebrow{color:var(--red)}
+    .deposit-note p,.total-box p,.terms-box span{color:var(--muted)!important}
+    input,select,textarea{width:100%;border:1px solid rgba(185,21,34,.17);border-radius:15px;padding:13px 15px;font:inherit;color:var(--ink);background:#fff;outline:none}
+    textarea{min-height:105px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0 4px rgba(185,21,34,.08)}
+    .field-grid{display:grid;gap:11px}.two-inputs{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+    .addons-box,.deposit-note,.total-box,.terms-box{background:var(--cream);border:1px solid var(--border);border-radius:20px;padding:16px}
+    .total-line{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid rgba(185,21,34,.10);font-size:14px;color:var(--muted)}
+    .total-line:last-child{border-bottom:0}
+    .total-line strong{color:var(--ink)}
+    .grand-total{font-size:18px;color:var(--red)!important;font-weight:900}
+    .terms-check{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:13px;line-height:1.45}
+    .terms-check input{width:auto;margin-top:3px;accent-color:var(--red)}
+    .addon-check{display:flex;gap:10px;background:#fff;border-radius:13px;padding:10px;margin-top:8px;color:var(--muted);line-height:1.35;font-size:13px}
+    .addon-check input{width:auto;margin-top:3px;accent-color:var(--red)}
+    .form button{width:100%;cursor:pointer;border:none;font:inherit}
+    .faq-grid,.policy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
+    .faq,.policy,.seo-box{background:rgba(255,255,255,.88);border:1px solid var(--border);border-radius:24px;padding:22px;box-shadow:var(--soft)}
+    .about{display:grid;grid-template-columns:300px 1fr;gap:38px;align-items:center}
+    .about-photo{border-radius:26px;overflow:hidden;border:1px solid rgba(200,164,93,.34);box-shadow:var(--soft);background:var(--cream)}
+    .about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+    .script{font-family:"Cormorant Garamond",Georgia,serif;font-size:25px;color:var(--gold);font-style:italic;margin:10px 0}
+    ul{padding-left:18px;color:var(--muted);line-height:1.65;font-size:14px}
+    footer{padding:30px 24px;text-align:center;color:var(--red);font-size:13px;border-top:1px solid rgba(200,164,93,.20)}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    @media(max-width:960px){
+      .links{position:absolute;top:82px;left:24px;right:24px;display:none;flex-direction:column;align-items:flex-start;background:rgba(255,255,255,.96);border:1px solid var(--border);border-radius:22px;padding:18px;box-shadow:var(--shadow)}
+      .links.open{display:flex}.menu-btn{display:inline-flex}.nav .btn-red{display:none}
+      .hero-grid,.book-grid,.about{grid-template-columns:1fr}.hero-art{min-height:500px}.main-frame{width:84%;height:430px}.small-frame{height:230px}
+      .section-head{display:block}.cards,.packages,.addons{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr;grid-auto-rows:360px}.gallery-item:first-child{grid-row:auto}
+      .faq-grid,.policy-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .container{padding:0 18px}.section{padding:64px 0}.logo{width:128px}.hero:before{inset:14px;border-radius:24px}.hero-grid{padding:44px 0 62px}
+      .hero-art{min-height:430px}.main-frame{width:88%;height:350px}.small-frame{width:45%;height:190px}.float-note{left:14px;right:auto;width:240px}
+      .cards,.packages,.addons{grid-template-columns:1fr}.two-inputs{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <div class="nav-wrap">
+    <div class="container">
+      <nav class="nav">
+        <img class="logo" src="gallery/the-romance-suite-logo.png" alt="The Romance Suite Logo">
+        <div class="links" id="menu">
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#packages">Packages</a>
+          <a href="#addons">Add-Ons</a>
+          <a href="#faq">FAQ</a>
+          <a href="#book">Book</a>
+        </div>
+        <button class="menu-btn" id="menuBtn" type="button">Menu</button>
+        <a href="#book" class="btn btn-red">Book Now</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <div class="pill">Luxury proposal, honeymoon, anniversary & celebration experiences in Orlando</div>
+          <h1>Romantic room reveals with a classic luxury finish.</h1>
+          <p class="lead">Luxury proposal, honeymoon, anniversary, and celebration experiences for couples visiting Orlando and Central Florida.</p>
+          <div class="hero-actions">
+            <a href="#book" class="btn btn-red">Start Your Booking</a>
+            <a href="#gallery" class="btn btn-outline">View Gallery</a>
+          </div>
+        </div>
+        <div class="hero-art reveal">
+          <div class="frame main-frame"><img src="gallery/grand-proposal-suite.jpg" alt="Luxury proposal suite setup"></div>
+          <div class="frame small-frame"><img src="gallery/classic-romance-date-night.jpg" alt="Romantic date night setup"></div>
+          <div class="float-note">
+            <p class="eyebrow">Signature Reveal</p>
+            <h3>Soft. Romantic. Elevated.</h3>
+            <p>Roses, candlelight, satin details, and luxury styling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2>Designed for unforgettable moments.</h2>
+        </div>
+        <p>We create elevated romantic setups for couples celebrating proposals, anniversaries, birthdays, honeymoons, and luxury date nights.</p>
+      </div>
+      <div class="cards">
+        <div class="card reveal"><div class="icon">✦</div><h3>Proposal Setups</h3><p>Luxury Orlando proposal room decor with roses, candles, champagne styling, and engagement details.</p></div>
+        <div class="card reveal"><div class="icon">✦</div><h3>Intentional Couple Experiences</h3><p>Elevated couple getaway experiences designed for intentional celebrations, anniversaries, and meaningful moments.</p></div>
+        <div class="card reveal"><div class="icon">✦</div><h3>Anniversaries</h3><p>Elegant rose petals, soft lighting, florals, and personalized suite styling.</p></div>
+        <div class="card reveal"><div class="icon">✦</div><h3>Birthdays</h3><p>Romantic birthday room reveals with balloons, florals, candles, and luxury details.</p></div>
+        <div class="card reveal"><div class="icon">✦</div><h3>Honeymoons</h3><p>Luxury suite styling for newlyweds visiting Orlando resorts and vacation homes.</p></div>
+        <div class="card reveal"><div class="icon">✦</div><h3>Luxury Romantic Getaways</h3><p>Elegant Airbnb, resort, and private villa styling for meaningful couple celebrations.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cream" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Gallery</p>
+          <h2>Signature romantic setups.</h2>
+        </div>
+        <p>Visual inspiration for luxury proposals, date nights, anniversary room setups, honeymoon suites, and vacation romance.</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-item reveal"><img src="gallery/grand-proposal-suite.jpg" alt="Grand proposal suite"><div class="caption"><h3>Grand Proposal</h3><p>Luxury engagement decor in Orlando.</p></div></article>
+        <article class="gallery-item reveal"><img src="gallery/classic-romance-date-night.jpg" alt="Classic romance date night"><div class="caption"><h3>Classic Romance</h3><p>Candlelit date night styling.</p></div></article>
+        <article class="gallery-item reveal"><img src="gallery/luxe-honeymoon-suite.jpg" alt="Luxe honeymoon suite"><div class="caption"><h3>Luxe Honeymoon</h3><p>Newlywed suite decor.</p></div></article>
+        <article class="gallery-item reveal"><img src="gallery/anniversary-suite-experience.jpg" alt="Anniversary suite"><div class="caption"><h3>Anniversary</h3><p>Elegant milestone styling.</p></div></article>
+        <article class="gallery-item reveal"><img src="gallery/romantic-birthday-setup.jpg" alt="Birthday celebration setup"><div class="caption"><h3>Birthday</h3><p>Luxury surprise celebration.</p></div></article>
+        <article class="gallery-item reveal"><img src="gallery/luxury-vacation-romance.jpg" alt="Luxury vacation romance"><div class="caption"><h3>Luxury Romantic Getaways</h3><p>Airbnb and villa styling.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="packages">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Packages</p>
+          <h2>Choose your room reveal.</h2>
+        </div>
+        <p>Start with a signature package, then elevate the experience with add-ons.</p>
+      </div>
+      <div class="packages">
+        <div class="package reveal"><span class="tag">Classic</span><h3>The Classic Romance</h3><p class="price">Starting at $375</p><p>Rose petals, candles, balloons, and a soft romantic reveal for intimate celebrations.</p><a href="#book" class="btn btn-outline">Inquire</a></div>
+        <div class="package featured reveal"><span class="tag">Popular</span><h3>The Grand Proposal</h3><p class="price">Starting at $575</p><p>A luxury proposal setup with statement styling, florals, candles, and a picture-ready focal moment.</p><a href="#book" class="btn btn-red">Inquire</a></div>
+        <div class="package reveal"><span class="tag">Premium</span><h3>The Luxe Honeymoon</h3><p class="price">Starting at $875</p><p>A premium suite transformation for couples celebrating love, travel, and once-in-a-lifetime memories.</p><a href="#book" class="btn btn-outline">Inquire</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cream" id="addons">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Luxury Add-Ons</p>
+          <h2>Thoughtful upgrades. Bigger moments.</h2>
+        </div>
+        <p>Add premium touches to personalize the setup and increase the surprise factor.</p>
+      </div>
+      <div class="addons">
+        <div class="addon reveal"><h3>Premium Champagne</h3><p><strong>From $125</strong></p><p>Moët or Veuve options.</p></div>
+        <div class="addon reveal"><h3>Fresh Florals</h3><p><strong>From $85</strong></p><p>Fresh arrangements and rose upgrades.</p></div>
+        <div class="addon reveal"><h3>Marry Me Signage</h3><p><strong>From $180</strong></p><p>Illuminated proposal signage.</p></div>
+        <div class="addon reveal"><h3>Polaroid Corner</h3><p><strong>From $75</strong></p><p>A styled keepsake station.</p></div>
+        <div class="addon reveal"><h3>Dinner Styling</h3><p><strong>From $175</strong></p><p>Romantic in-room table styling.</p></div>
+        <div class="addon reveal"><h3>Luxury Gift Styling</h3><p><strong>From $125 + purchase cost</strong></p><p>Personalized gift curation and surprise styling.</p></div>
+        <div class="addon reveal"><h3>Late Night Setup</h3><p><strong>From $100</strong></p><p>For setups after 10 PM.</p></div>
+        <div class="addon reveal"><h3>Rush Booking</h3><p><strong>$100</strong></p><p>Required within 7 days.</p></div>
+        <div class="addon reveal"><h3>Travel Fee</h3><p><strong>Varies</strong></p><p>Tampa, Melbourne, Cocoa Beach, Miami.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section book" id="book">
+    <div class="container book-grid">
+      <div class="reveal">
+        <p class="eyebrow">Book Your Experience</p>
+        <h2>Let us create the moment.</h2>
+        <p>Tell us the occasion, date, location, color palette, and the moment you want to create.</p>
+        <p>Serving Orlando, Windermere, Dr. Phillips, Lake Nona, Winter Garden, Winter Park, Maitland, Celebration, Cocoa Beach, Melbourne, Tampa, Miami (travel fee applies), and surrounding areas.</p>
+        <p>☎ (407) 000-0000<br>✉ hello@theromancesuite.com</p>
+      </div>
+      <form class="form reveal" name="romance-suite-booking" method="POST" data-netlify="true">
+        <div class="field-grid">
+          <input type="hidden" name="form-name" value="romance-suite-booking">
+          <input name="Client Name" placeholder="Name" required>
+          <input name="Email" type="email" placeholder="Email" required>
+          <input name="Phone" placeholder="Phone" required>
+          <select name="Package" id="package" required>
+            <option value="The Classic Romance" data-price="375">The Classic Romance</option>
+            <option value="The Grand Proposal" data-price="575">The Grand Proposal</option>
+            <option value="The Luxe Honeymoon" data-price="875">The Luxe Honeymoon</option>
+            <option value="Custom Experience" data-price="0">Custom Experience</option>
+          </select>
+          <div class="two-inputs"><input name="Preferred Date" type="date" required><input name="Preferred Time" type="time" required></div>
+          <input name="Hotel or Location" placeholder="Hotel, resort, Airbnb, or setup location" required>
+          <input name="Occasion" placeholder="Occasion: proposal, anniversary, birthday, honeymoon..." required>
+          <input name="Color Palette" placeholder="Preferred colors">
+          <div class="addons-box">
+            <p class="eyebrow">Select Add-Ons</p>
+            <label class="addon-check"><input type="checkbox" name="Add-Ons" value="Premium Champagne Service" data-addon-price="125"> Premium Champagne Service — From $125</label>
+            <label class="addon-check"><input type="checkbox" name="Add-Ons" value="Fresh Floral Arrangements" data-addon-price="85"> Fresh Floral Arrangements — From $85</label>
+            <label class="addon-check"><input type="checkbox" name="Add-Ons" value="Marry Me Signage" data-addon-price="180"> Marry Me Signage — From $180</label>
+            <label class="addon-check"><input type="checkbox" name="Add-Ons" value="Polaroid Memory Corner" data-addon-price="75"> Polaroid Memory Corner — From $75</label>
+            <label class="addon-check"><input type="checkbox" name="Add-Ons" value="Romantic Dinner Styling" data-addon-price="175"> Romantic Dinner Styling — From $175</label>
+            <label class="addon-check"><input type="checkbox" name="Add-Ons" value="Luxury Gift Styling Service" data-addon-price="125"> Luxury Gift Styling Service — From $125 + purchase cost</label>
+            <label class="addon-check"><input type="checkbox" name="Add-Ons" value="Rush Booking Fee" data-addon-price="100"> Rush Booking Fee — $100</label>
+          </div>
+          <textarea name="Vision Details" placeholder="Tell us your vision, room access details, and any special notes."></textarea>
+          <input type="hidden" name="Estimated Package Total" id="estimatedTotalField" value="$375">
+          <input type="hidden" name="Estimated 40% Deposit" id="estimatedDepositField" value="$150">
+          <input type="hidden" name="Terms Agreement" id="termsAgreementField" value="Client agreed to booking policies and terms.">
+
+          <div class="total-box">
+            <p class="eyebrow">Estimated Total</p>
+            <div class="total-line"><span>Selected package</span><strong id="packageTotal">$375</strong></div>
+            <div class="total-line"><span>Selected add-ons</span><strong id="addonsTotal">$0</strong></div>
+            <div class="total-line"><span class="grand-total">Estimated total</span><strong class="grand-total" id="grandTotal">$375</strong></div>
+            <div class="total-line"><span>40% deposit due</span><strong id="depositDue">$150</strong></div>
+            <p style="font-size:12px;margin:10px 0 0;">Final pricing may change if custom requests, purchase-cost items, or travel fees apply.</p>
+          </div>
+
+          <div class="deposit-note"><p style="margin:0"><strong style="color:var(--red)">Deposit required to confirm booking.</strong></p><p id="depositText" style="margin-bottom:0">A non-refundable 40% deposit is required. Estimated deposit: $150.</p></div>
+
+          <div class="terms-box">
+            <label class="terms-check">
+              <input type="checkbox" name="Booking Policy Agreement" value="Agreed" required>
+              <span>I agree to The Romance Suite booking policies, including the non-refundable 40% deposit, final payment due 7 days before the event, rescheduling and weather policies, applicable travel fees, and hotel/accommodation cleanup responsibilities.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-red">Submit Booking Request</button>
+          <a class="btn btn-outline" href="https://buy.stripe.com/your-deposit-link" target="_blank" rel="noreferrer">Pay 40% Deposit</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section cream" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Everything you need to know.</h2>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq reveal"><h3>How far in advance should I book?</h3><p>At least 2–3 weeks in advance is recommended, especially during holidays and peak travel seasons.</p></div>
+        <div class="faq reveal"><h3>Do you travel outside Orlando?</h3><p>Yes. We service Central Florida and select destinations including Tampa, Cocoa Beach, Melbourne, and Miami. Travel fees may apply.</p></div>
+        <div class="faq reveal"><h3>Is the hotel included?</h3><p>No. Clients book and pay for their hotel, resort, Airbnb, or accommodation separately.</p></div>
+        <div class="faq reveal"><h3>Is the deposit refundable?</h3><p>Deposits are non-refundable but may be transferred to a new approved date if rescheduling is needed.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about reveal">
+      <div class="about-photo"><img src="gallery/mimi-founder.jpg" alt="Mimi, founder of The Romance Suite"></div>
+      <div>
+        <p class="eyebrow">Meet The Founder</p>
+        <h2>Meet Mimi</h2>
+        <p class="script">A romantic eye for unforgettable details.</p>
+        <p>Hi, I’m Mimi — the founder of The Romance Suite. As a college student with a love for creativity, luxury aesthetics, and meaningful experiences, I created this brand to help couples celebrate their most special moments beautifully.</p>
+        <p><strong style="color:var(--red)">My goal is simple: create moments that feel personal, elegant, and unforgettable from the second you walk into the room.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cream">
+    <div class="container">
+      <div class="seo-box reveal">
+        <p class="eyebrow">Booking Policies</p>
+        <h2>Please review before booking.</h2>
+        <div class="policy-grid">
+          <div class="policy"><h3>Deposits & Payments</h3><ul><li>A non-refundable 40% deposit is required to secure your booking date.</li><li>Remaining balance is due 7 days before your setup.</li><li>Bookings are not confirmed until the deposit is received.</li></ul></div>
+          <div class="policy"><h3>Rescheduling & Weather</h3><ul><li>Deposits are non-refundable but may transfer to an approved new date.</li><li>Outdoor weather-related cancellations may be rescheduled based on availability.</li><li>Bookings within 7 days require a $100 rush fee.</li></ul></div>
+        </div>
+        <div class="policy" style="margin-top:16px"><h3>Hotel & Resort Policies</h3><p>Package pricing does not include hotel, resort, Airbnb, or accommodation charges. We collect reusable decor items when applicable, but general cleanup, housekeeping, trash removal, and accommodation cleaning remain the responsibility of the hotel, host, or guest.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container seo-box reveal">
+      <p class="eyebrow">Orlando Romance Decor</p>
+      <h2>Luxury proposal, honeymoon, anniversary & celebration experiences in Orlando, Tampa, Miami & Central Florida</h2>
+      <p>The Romance Suite offers elevated proposal experiences, anniversary celebrations, honeymoon suite styling, romantic getaway experiences, birthday celebrations, and luxury couple experiences throughout Orlando, Windermere, Dr. Phillips, Lake Nona, Maitland, Winter Park, Celebration, Kissimmee, Lake Buena Vista, Cocoa Beach, Melbourne, Tampa, Miami (travel fee applies), and surrounding Central Florida destinations.</p>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> The Romance Suite. Luxury couple celebration experiences in Orlando, Florida.</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn=document.getElementById('menuBtn'), menu=document.getElementById('menu');
+    menuBtn.addEventListener('click',()=>menu.classList.toggle('open'));
+    menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+    const packageSelect=document.getElementById('package');
+    const depositText=document.getElementById('depositText');
+    const packageTotal=document.getElementById('packageTotal');
+    const addonsTotal=document.getElementById('addonsTotal');
+    const grandTotal=document.getElementById('grandTotal');
+    const depositDue=document.getElementById('depositDue');
+    const estimatedTotalField=document.getElementById('estimatedTotalField');
+    const estimatedDepositField=document.getElementById('estimatedDepositField');
+    const addonCheckboxes=document.querySelectorAll('input[name="Add-Ons"]');
+
+    function money(amount){return `$${Math.round(amount).toLocaleString()}`;}
+
+    function updateBookingTotal(){
+      const selected=packageSelect.options[packageSelect.selectedIndex];
+      const packagePrice=Number(selected.getAttribute('data-price')) || 0;
+
+      let addonTotal=0;
+      addonCheckboxes.forEach(box=>{
+        if(box.checked){addonTotal += Number(box.getAttribute('data-addon-price')) || 0;}
+      });
+
+      const total=packagePrice + addonTotal;
+      const deposit=total > 0 ? total * 0.4 : 0;
+
+      packageTotal.textContent = packagePrice ? money(packagePrice) : 'Custom quote';
+      addonsTotal.textContent = money(addonTotal);
+      grandTotal.textContent = total ? money(total) : 'Custom quote';
+      depositDue.textContent = deposit ? money(deposit) : 'Custom quote';
+
+      estimatedTotalField.value = total ? money(total) : 'Custom quote required';
+      estimatedDepositField.value = deposit ? money(deposit) : 'Custom quote required';
+
+      depositText.textContent = total > 0
+        ? `A non-refundable 40% deposit is required. Estimated deposit: ${money(deposit)}.`
+        : 'Custom experiences receive a personalized quote and deposit amount after consultation.';
+    }
+
+    packageSelect.addEventListener('change',updateBookingTotal);
+    addonCheckboxes.forEach(box=>box.addEventListener('change',updateBookingTotal));
+    updateBookingTotal();
+
+    const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible')}})},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
